@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groceries Shopping List - Sign In</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"></div>
+      <div class="content">
+        <ul id="list">
+          <li class="item">
+            <p class="register-name">Sign In</p>
+          </li>
+          <form class="form1">
+            <label for="email"></label>
+            <input type="text" class="email" id="email" placeholder="email" />
+            <label for="password"></label>
+            <input
+              type="password"
+              class="password"
+              id="password"
+              placeholder="password"
+            />
+            <div id="errorMessage" style="display: none; color: black">
+              "user are not registered"
+            </div>
+            <div id="submitbutton">
+              <a href="#" id="submit" onclick="sign(); return false;">
+                <span>sign in</span>
+              </a>
+            </div>
+            <div class="noaccount">
+              <p>
+                doesn't have an account?
+                <a href="/index.html">sign up</a>
+              </p>
+            </div>
+          </form>
+        </ul>
+      </div>
+    </div>
+    <script src="./login.js"></script>
+  </body>
+</html>
